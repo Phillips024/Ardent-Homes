@@ -4,83 +4,72 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ardent Homes</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-    }
-    header {
-      background: #2c3e50;
-      color: white;
-      padding: 1rem;
-      text-align: center;
-    }
-    nav {
-      background: #34495e;
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      padding: 1rem;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-    }
-    .hero {
-      background: url('https://via.placeholder.com/1600x500') center/cover no-repeat;
-      color: white;
-      text-align: center;
-      padding: 4rem 1rem;
-    }
-    .section {
-      padding: 2rem 1rem;
-      text-align: center;
-    }
-    .contact {
-      background: #ecf0f1;
-      padding: 2rem 1rem;
-    }
-    footer {
-      background: #2c3e50;
-      color: white;
-      text-align: center;
-      padding: 1rem;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <h1>Ardent Homes</h1>
-    <p>Quality homes built with care</p>
+  <header class="hero">
+    <div class="hero-text">
+      <h1>Welcome to Ardent Homes</h1>
+      <p>Building your future with quality and care</p>
+    </div>
   </header>
+
   <nav>
-    <a href="#services">Services</a>
-    <a href="#gallery">Gallery</a>
-    <a href="#contact">Contact</a>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#plans">Plans</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
   </nav>
-  <section class="hero">
-    <h2>Your Dream Home Starts Here</h2>
-    <p>Design. Build. Live.</p>
+
+  <section id="about">
+    <h2>About Ardent Homes</h2>
+    <p>Ardent Homes is committed to crafting high-quality homes tailored to your lifestyle. With years of experience in the New Zealand building industry, we provide full-service residential construction.</p>
   </section>
-  <section class="section" id="services">
+
+  <section id="services">
     <h2>Our Services</h2>
-    <p>New Builds, Renovations, and Custom Design</p>
+    <ul>
+      <li>Custom Home Design</li>
+      <li>Full Project Management</li>
+      <li>Renovations and Extensions</li>
+      <li>Energy-Efficient Builds</li>
+    </ul>
   </section>
-  <section class="section" id="gallery">
-    <h2>Gallery</h2>
-    <img src="https://via.placeholder.com/300" alt="Home 1" />
-    <img src="https://via.placeholder.com/300" alt="Home 2" />
-    <img src="https://via.placeholder.com/300" alt="Home 3" />
+
+  <section id="plans">
+    <h2>Our Plans</h2>
+    <p>Browse our range of popular home plans. Each is customizable to suit your needs.</p>
+    <div class="plans-gallery">
+      <img src="images/plan1.jpg" alt="Plan 1">
+      <img src="images/plan2.jpg" alt="Plan 2">
+      <img src="images/plan3.jpg" alt="Plan 3">
+    </div>
   </section>
-  <section class="contact" id="contact">
+
+  <section id="contact">
     <h2>Contact Us</h2>
-    <p>Phillip Sipou</p>
-    <p>Phone: 02108335919</p>
-    <p>Email: info@ardenthomes.co.nz</p>
+    <p>Phillip Sipou<br>Mobile: 02108335919</p>
+    <form action="https://formspree.io/f/moqgklql" method="POST">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
   </section>
+
   <footer>
     <p>&copy; 2025 Ardent Homes. All rights reserved.</p>
   </footer>
 </body>
 </html>
-
