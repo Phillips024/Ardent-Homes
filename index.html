@@ -4,7 +4,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ardent Homes</title>
-  <link rel="stylesheet" href="style.css" />
   <style>
     body { margin: 0; font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
     .container { width: 90%; max-width: 1200px; margin: auto; }
@@ -14,7 +13,7 @@
     nav a { color: #000; text-decoration: none; padding: 0.5rem 1rem; }
     nav a:hover { background: #eee; border-radius: 5px; }
     .menu-toggle { display: none; font-size: 1.5rem; background: none; border: none; color: #000; cursor: pointer; padding: 0.25rem 0.5rem; position: absolute; top: 1.2rem; right: 1rem; z-index: 1001; }
-    .hero { background: #ccc url('placeholder-hero.jpg') center/cover no-repeat; color: #000; padding: 5rem 0; text-align: center; }
+    .hero { background: url('https://via.placeholder.com/1600x400') center/cover no-repeat; color: #000; padding: 5rem 0; text-align: center; }
     .hero h1 { font-size: 3rem; margin-bottom: 0.5rem; }
     .about, .homes, .contact { padding: 4rem 0; background: #f9f9f9; }
     .home-gallery { display: flex; gap: 2rem; flex-wrap: wrap; }
@@ -57,7 +56,7 @@
   <!-- Header -->
   <header>
     <div class="logo">ARDENT HOMES</div>
-    <button class="menu-toggle" onclick="document.querySelector('nav ul').classList.toggle('show')">&#9776;</button>
+    <button class="menu-toggle">&#9776;</button>
     <nav>
       <ul>
         <li><a href="#home">HOME</a></li>
@@ -126,6 +125,16 @@
       <p>&copy; 2025 Ardent Homes. All rights reserved.</p>
     </div>
   </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const menuToggle = document.querySelector(".menu-toggle");
+      const menu = document.querySelector("nav ul");
+      menuToggle.addEventListener("click", () => {
+        menu.classList.toggle("show");
+      });
+    });
+  </script>
 </body>
 </html>
 
