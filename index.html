@@ -56,13 +56,14 @@
     .menu-toggle { display: none; font-size: 1.5rem; background: none; border: none; color: #000; cursor: pointer; padding: 0.25rem 0.5rem; position: absolute; top: 1.2rem; right: 1rem; z-index: 1001; }
     .hero {
       background: url('20191221_133024.jpg') center top no-repeat;
-      background-size: 100% auto;
+      background-size: cover;
       background-repeat: no-repeat;
       background-color: #eee;
       height: 48vh;
       text-align: center;
       display: flex;
       align-items: center;
+      width: 100%;
     }
     .hero h1 { font-size: 3rem; margin-bottom: 0.5rem; padding-top: 2rem; }
     .about, .homes, .contact { padding: 4rem 0; background: #f9f9f9; }
@@ -71,6 +72,11 @@
     footer { background: #111; color: #fff; text-align: center; padding: 2rem 0; margin-top: 2rem; }
 
     @media (max-width: 768px) {
+      .hero {
+        background-size: cover;
+        background-position: center top;
+        width: 100vw;
+      }
       .hero-text {
         justify-content: center;
         text-align: center;
