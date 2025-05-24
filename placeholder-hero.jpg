@@ -1,0 +1,4 @@
+.hero {
+  background: #ccc url('placeholder-hero.jpg') center/cover no-repeat;
+}
+
