@@ -8,75 +8,12 @@
   <style>
     body { margin: 0; font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
     .container { width: 90%; max-width: 1200px; margin: auto; }
-    header { background: #111; color: #fff; padding: 1rem 0; position: sticky; top: 0; z-index: 1000; display: flex; justify-content: space-between; align-items: center; }
-    .logo { font-size: 2.5rem; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; margin-left: 1rem; }
-    nav ul { list-style: none; margin: 0; padding: 0; display: flex; gap: 1.5rem; margin-right: 2rem; }
-    nav a { color: #fff; text-decoration: none; padding: 0.5rem 1rem; }
-    nav a:hover { background: #444; border-radius: 5px; }
-    .menu-toggle { display: none; font-size: 2rem; background: none; border: none; color: #fff; margin-right: 1rem; cursor: pointer; }
-    .hero { background: #ccc url('placeholder-hero.jpg') center/cover no-repeat; color: #000; padding: 5rem 0; text-align: center; }
-    .hero h1 { font-size: 3rem; margin-bottom: 0.5rem; }
-    .about, .homes, .contact { padding: 4rem 0; background: #f9f9f9; }
-    .home-gallery { display: flex; gap: 2rem; flex-wrap: wrap; }
-    .home-item { background: #eee; flex: 1; min-width: 200px; height: 200px; display: flex; align-items: center; justify-content: center; font-weight: bold; }
-    form { display: flex; flex-direction: column; gap: 1rem; max-width: 500px; }
-    input, textarea { padding: 0.75rem; border: 1px solid #ccc; border-radius: 5px; }
-    button { background: #111; color: #fff; border: none; padding: 0.75rem; cursor: pointer; border-radius: 5px; }
-    button:hover { background: #333; }
-    footer { background: #111; color: #fff; text-align: center; padding: 2rem 0; margin-top: 2rem; }
-
-    @media (max-width: 768px) {
-      header { flex-wrap: wrap; justify-content: center; text-align: center; }
-      .logo { margin: 0 auto; }
-      nav ul { 
-        flex-direction: column; 
-        align-items: center; 
-        width: 100%; 
-        display: none;
-        background-color: #111;
-        margin-top: 0.5rem;
-        font-size: 0.9rem;
-      }
-      nav ul.show { display: flex; }
-      .menu-toggle { display: block; position: absolute; top: 1rem; right: 1rem; }
-    }
-  </style>
-</head>
-<body>
-  <!-- Header -->
-  <header>
-    <div class="logo">ARDENT HOMES</div>
-    <button class="menu-toggle" onclick="document.querySelector('nav ul').classList.toggle('show')">&#9776;</button>
-    <nav>
-      <ul>
-        <li><a href="#home">HOME</a></li>
-        <li><a href="#about">ABOUT US</a></li>
-        <li><a href="#services">SERVICES</a></li>
-        <li><a href="#gallery">PROJECT/GALLERY</a></li>
-        <li><a href="#contact">CONTACT US</a></li>
-        <li><a href="tel:02108335919">02108335919</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <!-- Hero Section -->
-  <section id="home" class="hero">
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ardent Homes</title>
-  <link rel="stylesheet" href="style.css" />
-  <style>
-    body { margin: 0; font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
-    .container { width: 90%; max-width: 1200px; margin: auto; }
     header { background: #111; color: #fff; padding: 1rem 0; position: sticky; top: 0; z-index: 1000; display: flex; justify-content: space-between; align-items: center; position: relative; }
-    .logo { font-size: 2.5rem; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; margin-left: 1rem; }
+    .logo { font-size: 2.5rem; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; margin-left: 1rem; flex: 1; text-align: center; }
     nav ul { list-style: none; margin: 0; padding: 0; display: flex; gap: 1.5rem; margin-right: 2rem; }
     nav a { color: #fff; text-decoration: none; padding: 0.5rem 1rem; }
     nav a:hover { background: #444; border-radius: 5px; }
-    .menu-toggle { display: none; font-size: 1.5rem; background: none; border: none; color: #fff; position: absolute; top: 1.2rem; right: 1rem; cursor: pointer; padding: 0.25rem 0.5rem; }
+    .menu-toggle { display: none; font-size: 1.5rem; background: none; border: none; color: #fff; cursor: pointer; padding: 0.25rem 0.5rem; position: absolute; top: 1.2rem; right: 1rem; z-index: 1001; }
     .hero { background: #ccc url('placeholder-hero.jpg') center/cover no-repeat; color: #000; padding: 5rem 0; text-align: center; }
     .hero h1 { font-size: 3rem; margin-bottom: 0.5rem; }
     .about, .homes, .contact { padding: 4rem 0; background: #f9f9f9; }
@@ -89,19 +26,23 @@
     footer { background: #111; color: #fff; text-align: center; padding: 2rem 0; margin-top: 2rem; }
 
     @media (max-width: 768px) {
-      header { flex-wrap: wrap; justify-content: center; text-align: center; }
-      .logo { margin: 0 auto; }
-      nav ul { 
-        flex-direction: column; 
-        align-items: center; 
-        width: 100%; 
+      header { flex-wrap: nowrap; flex-direction: row; justify-content: space-between; align-items: center; }
+      .logo { flex: 1; margin: 0; text-align: center; }
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
         display: none;
         background-color: #111;
-        margin-top: 0.5rem;
         font-size: 0.85rem;
+        margin-top: 3rem;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        z-index: 1000;
       }
       nav ul.show { display: flex; }
-      .menu-toggle { display: block; font-size: 1.2rem; }
+      .menu-toggle { display: block; font-size: 1.2rem; right: 1rem; }
     }
   </style>
 </head>
