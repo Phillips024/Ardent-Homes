@@ -63,7 +63,7 @@
       text-align: center;
       display: flex;
       align-items: center;
-      width: 100%;
+      width: 100vw;
     }
     .hero h1 { font-size: 3rem; margin-bottom: 0.5rem; padding-top: 2rem; }
     .about, .homes, .contact { padding: 4rem 0; background: #f9f9f9; }
@@ -72,6 +72,13 @@
     footer { background: #111; color: #fff; text-align: center; padding: 2rem 0; margin-top: 2rem; }
 
     @media (max-width: 768px) {
+      body, html {
+        width: 100vw;
+        overflow-x: hidden;
+      }
+      section, header, footer {
+        width: 100vw;
+      }
       .hero {
         background-size: cover;
         background-position: center top;
