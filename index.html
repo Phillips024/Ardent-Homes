@@ -5,6 +5,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ardent Homes</title>
   <style>
+    .hero-caption {
+      position: absolute;
+      top: 1rem;
+      right: 2rem;
+      color: #ffffff;
+      font-size: 2rem;
+      font-weight: 600;
+      text-align: right;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+    }
+    .hero-text {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      height: 100%;
+      padding-right: 2rem;
+    }
+    .hero-text h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      text-align: right;
+    }
+
     body { margin: 0; font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
     .container { width: 90%; max-width: 1200px; margin: auto; }
     header { background: #fff; color: #000; padding: 1rem 0; position: sticky; top: 0; z-index: 1000; display: flex; justify-content: space-between; align-items: center; position: relative; border-bottom: 1px solid #ccc; }
@@ -37,6 +61,8 @@
       background-color: #eee;
       height: 48vh;
       text-align: center;
+      display: flex;
+      align-items: center;
     }
     .hero h1 { font-size: 3rem; margin-bottom: 0.5rem; padding-top: 2rem; }
     .about, .homes, .contact { padding: 4rem 0; background: #f9f9f9; }
@@ -45,6 +71,18 @@
     footer { background: #111; color: #fff; text-align: center; padding: 2rem 0; margin-top: 2rem; }
 
     @media (max-width: 768px) {
+      .hero-text {
+        justify-content: center;
+        text-align: center;
+        padding-right: 0;
+      }
+      .hero-text h1 {
+        font-size: 1.5rem;
+      }
+      .hero {
+        background-size: 100% auto;
+        background-position: center top;
+      }
       .branding img {
         height: 1.2rem;
       }
@@ -100,11 +138,9 @@
   </header>
 
   <!-- Hero Section -->
-  <section id="home" class="hero">
-    <div class="container">
-      <h1>Your New Home Starts Here</h1>
-      <p>Quality homes, crafted with care.</p>
-    </div>
+  <section id="home" class="hero" style="position: relative;">
+    <div class="hero-caption">New Build<br>And<br>Renovation Specialist</div>
+    
   </section>
 
   <!-- About Section -->
