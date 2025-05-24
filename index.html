@@ -9,7 +9,11 @@
     .container { width: 90%; max-width: 1200px; margin: auto; }
     header { background: #fff; color: #000; padding: 1rem 0; position: sticky; top: 0; z-index: 1000; display: flex; justify-content: space-between; align-items: center; position: relative; border-bottom: 1px solid #ccc; }
     .branding { display: flex; align-items: center; flex: 1; justify-content: center; gap: 0.4rem; flex-direction: row; }
-    .branding img { height: 1.9rem; width: auto; display: block; }
+    .branding img {
+      height: 1.9rem;
+      width: auto;
+      display: block;
+    }
     .logo { font-size: 2.5rem; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; color: #000; line-height: 1; display: block; }
     nav ul {
       list-style: none;
@@ -41,6 +45,9 @@
     footer { background: #111; color: #fff; text-align: center; padding: 2rem 0; margin-top: 2rem; }
 
     @media (max-width: 768px) {
+      .branding img {
+        height: 1.2rem;
+      }
       header { flex-wrap: nowrap; flex-direction: row; justify-content: space-between; align-items: center; }
       .branding { flex-direction: row; gap: 0.5rem; align-items: center; }
       .logo { font-size: 1.8rem; }
@@ -79,8 +86,8 @@
     </div>
     </div>
     <button class="menu-toggle">&#9776;</button>
-    <nav style="display: flex; align-items: center;">
-      <ul style="margin: 0 auto; display: flex; align-items: center;">
+    <nav>
+      <ul>
         <li><a href="#home">HOME</a></li>
         <li><a href="#about">ABOUT US</a></li>
         <li><a href="#services">SERVICES</a></li>
