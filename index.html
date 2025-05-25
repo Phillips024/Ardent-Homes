@@ -84,6 +84,8 @@
   justify-content: center;
   box-sizing: border-box;
   background: rgba(0, 0, 0, 0.4);
+  position: relative;
+  z-index: 1000;
 }
     nav a {
   color: #fff !important;
@@ -96,18 +98,18 @@
   color: #000;
 }
     .menu-toggle {
-      display: none;
-      font-size: 1.5rem;
-      background: none;
-      border: none;
-      color: #000;
-      cursor: pointer;
-      padding: 0.25rem 0.5rem;
-      position: absolute;
-      top: 1.2rem;
-      right: 1rem;
-      z-index: 1001;
-    }
+  display: none;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  padding: 0.25rem 0.5rem;
+  position: absolute;
+  top: 1.2rem;
+  right: 1rem;
+  z-index: 1001;
+}
     .hero {
   background: url('20191221_133024.jpg') center center no-repeat;
   background-size: cover;
@@ -152,62 +154,7 @@
       margin-top: 2rem;
     }
     @media (max-width: 1024px) {
-      .hero {
-        background-size: cover !important;
-        background-position: center top !important;
-        height: 48vh;
-        width: 100vw;
-      }
-      .hero-caption {
-  position: absolute;
-  bottom: 2rem;
-  right: 2rem;
-  color: #ffffff;
-  font-size: 2rem;
-  font-weight: 600;
-  text-align: right;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
-  line-height: 1.3;
-  width: max-content;
-  white-space: nowrap;
-  z-index: 10;
-}
-      html, body {
-        width: 100vw;
-        max-width: 100vw;
-        overflow-x: hidden;
-      }
-      section, header, footer {
-        width: 100vw;
-        max-width: 100vw;
-        box-sizing: border-box;
-      }
-      .hero-text {
-        justify-content: center;
-        text-align: center;
-        padding-right: 0;
-      }
-      .hero-text h1 {
-        font-size: 1.5rem;
-      }
-      .branding img {
-        height: 1.2rem;
-      }
-      header {
-        flex-wrap: nowrap;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-      }
-      .branding {
-        flex-direction: row;
-        gap: 0.5rem;
-        align-items: center;
-      }
-      .logo {
-        font-size: 1.8rem;
-      }
-      nav ul {
+$1nav ul {
   flex-direction: column;
   align-items: center;
   width: 100vw;
