@@ -154,6 +154,33 @@
       margin-top: 2rem;
     }
     @media (max-width: 1024px) {
+  nav ul {
+    display: none;
+  }
+  nav ul.show {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.95);
+    font-size: 0.85rem;
+    position: fixed;
+    top: 4.5rem;
+    z-index: 999;
+    margin: 0;
+    padding: 1rem 0;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+  }
+  .menu-toggle {
+    display: block;
+    font-size: 1.2rem;
+    right: 1rem;
+  }
+  nav a {
+    color: #fff;
+  }
 $1nav ul {
   flex-direction: column;
   align-items: center;
@@ -169,6 +196,10 @@ $1nav ul {
   padding: 1rem 0;
   border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
+}
+  nav ul.show {
+    display: flex;
+  }
 }
   nav ul.show {
     display: flex;
