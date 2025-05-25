@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Services | Ardent Homes</title>
+  <style>
+    body {
+      width: 100vw;
+      overflow-x: hidden;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #fff;
+    }
+    header {
+      background: transparent;
+      padding: 1rem 0;
+      position: absolute;
+      top: 0;
+      z-index: 1000;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: none;
+    }
+    .branding {
+      display: flex;
+      align-items: center;
+      flex: 1;
+      justify-content: center;
+      gap: 0.4rem;
+      flex-direction: row;
+    }
+    .branding img {
+      height: 1.9rem;
+      width: auto;
+      display: block;
+    }
+    .logo {
+      font-size: 2.5rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #fff;
+      line-height: 1;
+      display: block;
+    }
+    nav ul {
+      list-style: none;
+      margin: 0 auto;
+      padding: 0.5rem 1rem;
+      display: flex;
+      gap: 1.5rem;
+      border: 1px solid #fff;
+      border-radius: 10px;
+      align-items: center;
+      justify-content: center;
+      box-sizing: border-box;
+      background: rgba(0, 0, 0, 0.4);
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+    }
+    nav a:hover {
+      background: #eee;
+      border-radius: 5px;
+      color: #000;
+    }
+    .menu-toggle {
+      display: none;
+      font-size: 1.5rem;
+      background: none;
+      border: none;
+      color: #fff;
+      cursor: pointer;
+      padding: 0.25rem 0.5rem;
+      position: absolute;
+      top: 1.2rem;
+      right: 1rem;
+      z-index: 1001;
+    }
+    .hero {
+      background: url('project2.jpg') center center no-repeat;
+      background-size: cover;
+      min-height: 100vh;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding-top: 6rem;
+      box-sizing: border-box;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+    .hero p, .hero ul, .hero a {
+      max-width: 800px;
+      margin: 0 auto 1rem;
+      padding: 0 1rem;
+    }
+    .hero ul {
+      list-style: none;
+      padding: 1rem;
+    }
+    .hero li {
+      margin-bottom: 0.5rem;
+    }
+    a {
+      color: #fff;
+      text-decoration: underline;
+    }
+    @media (max-width: 1024px) {
+      .hero {
+        background-size: cover !important;
+        background-position: center center !important;
+        min-height: 100vh;
+        width: 100vw;
+      }
+      html, body {
+        width: 100vw;
+        max-width: 100vw;
+        overflow-x: hidden;
+      }
+      section, header, footer {
+        width: 100vw;
+        max-width: 100vw;
+        box-sizing: border-box;
+      }
+      .branding img {
+        height: 1.2rem;
+      }
+      header {
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .branding {
+        flex-direction: row;
+        gap: 0.5rem;
+        align-items: center;
+      }
+      .logo {
+        font-size: 1.8rem;
+      }
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+        width: 100vw;
+        left: 0;
+        display: none;
+        background-color: rgba(255,255,255,0.95);
+        font-size: 0.85rem;
+        position: absolute;
+        top: 100%;
+        z-index: 1000;
+        margin: 0;
+        padding: 1rem 0;
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+      }
+      nav ul.show {
+        display: flex;
+      }
+      .menu-toggle {
+        display: block;
+        font-size: 1.2rem;
+        right: 1rem;
+      }
+      nav a {
+        color: #000;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="branding">
+      <img src="ardent_embem_cropped(1).png" alt="Ardent Homes Logo">
+      <div class="logo">ARDENT HOMES</div>
+    </div>
+    <button class="menu-toggle">&#9776;</button>
+    <nav>
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="index.html#about">ABOUT US</a></li>
+        <li><a href="services.html">SERVICES</a></li>
+        <li><a href="index.html#gallery">PROJECT/GALLERY</a></li>
+        <li><a href="index.html#contact">CONTACT US</a></li>
+        <li><a href="tel:02108335919">02108335919</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Our Services</h1>
+    <p>No job is too big or too small — we take pride in delivering quality craftsmanship from solid foundations to flawless finishing touches. Whether you're building new or breathing life into an existing space, we've got you covered every step of the way.</p>
+    <ul>
+      <li><strong>New Builds</strong> — Custom homes built from the ground up</li>
+      <li><strong>Renovations</strong> — Whether it’s a complete transformation or a refresh of your kitchen and bathroom — we’ve got you covered.</li>
+      <li><strong>Reclads</strong> — Giving your home a fresh, weather-tight exterior</li>
+      <li><strong>Decks</strong> — Outdoor living spaces designed to last</li>
+    </ul>
+    <a href="index.html">&#8592; Back to Home</a>
+  </section>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const menuToggle = document.querySelector(".menu-toggle");
+      const menu = document.querySelector("nav ul");
+      menuToggle.addEventListener("click", () => {
+        menu.classList.toggle("show");
+      });
+    });
+  </script>
+</body>
+</html>
+
