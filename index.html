@@ -71,7 +71,9 @@
       text-align: center;
       display: flex;
       align-items: center;
+      justify-content: center;
       width: 100vw;
+      position: relative;
     }
     .hero h1 { font-size: 3rem; margin-bottom: 0.5rem; padding-top: 2rem; }
     .about, .homes, .contact { padding: 4rem 0; background: #f9f9f9; }
@@ -80,6 +82,25 @@
     footer { background: #111; color: #fff; text-align: center; padding: 2rem 0; margin-top: 2rem; }
 
     @media (max-width: 1024px) {
+      .hero {
+        background-size: cover !important;
+        background-position: center top !important;
+        height: 48vh;
+        width: 100vw;
+      }
+      .hero-caption {
+        position: absolute;
+        top: 1rem;
+        right: 2rem;
+        color: #ffffff;
+        font-size: 2rem;
+        font-weight: 600;
+        text-align: right;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+        line-height: 1.3;
+        width: max-content;
+        white-space: nowrap;
+      }
       .hero {
         background-size: cover !important;
         background-position: center top !important;
@@ -205,7 +226,13 @@
   <section id="services" class="about">
     <div class="container">
       <h2>Our Services</h2>
-      <p>[Placeholder for services offered]</p>
+      <p>No job is too big or too small — we take pride in delivering quality craftsmanship from solid foundations to flawless finishing touches. Whether you're building new or breathing life into an existing space, we've got you covered every step of the way.</p>
+      <ul>
+        <li><strong>New Builds</strong> — Custom homes built from the ground up</li>
+        <li><strong>Renovations</strong> — Full-scale makeovers or subtle improvements</li>
+        <li><strong>Reclads</strong> — Giving your home a fresh, weather-tight exterior</li>
+        <li><strong>Decks</strong> — Outdoor living spaces designed to last</li>
+      </ul>
     </div>
   </section>
 
