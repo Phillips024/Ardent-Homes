@@ -100,9 +100,9 @@
       position: absolute;
       bottom: 1rem;
       right: 1rem;
-      font-size: 2.5rem;
+      /* 25% smaller than original 2.5rem */
+      font-size: 1.875rem;
       font-weight: bold;
-      /* Allow mixed-case letters */
       text-transform: none;
       letter-spacing: 1px;
       color: #fff;
@@ -179,6 +179,10 @@
       }
       nav a {
         color: #000;
+      }
+      .hero-text {
+        /* Match desktop size */
+        font-size: 1.875rem;
       }
     }
   </style>
