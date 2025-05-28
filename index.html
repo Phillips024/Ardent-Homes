@@ -16,7 +16,7 @@
     header {
       background: transparent;
       padding: 1rem 0;
-      position: absolute;
+      position: fixed;
       top: 0;
       z-index: 1000;
       width: 100%;
@@ -92,7 +92,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      padding-top: 6rem;
+      padding-top: 0;
       box-sizing: border-box;
       animation: subtleZoom 20s ease-in-out infinite alternate;
     }
@@ -124,7 +124,6 @@
         background-position: center center !important;
         min-height: 100vh;
         width: 100vw;
-        /* reduce top padding so bottom text is visible */
         padding-top: 4rem;
       }
       html, body {
@@ -176,7 +175,6 @@
       .menu-toggle {
         display: block;
         font-size: 1.2rem;
-        /* Move up and closer to right edge */
         top: 0.75rem;
         right: 0.5rem;
       }
@@ -198,11 +196,11 @@
     <button class="menu-toggle">&#9776;</button>
     <nav>
       <ul>
-        <li><a href="index.html">HOME</a></li>
-        <li><a href="index.html#about">ABOUT US</a></li>
-        <li><a href="services.html">SERVICES</a></li>
-        <li><a href="index.html#gallery">PROJECT/GALLERY</a></li>
-        <li><a href="index.html#contact">CONTACT US</a></li>
+        <li><a href="#">HOME</a></li>
+        <li><a href="#about">ABOUT US</a></li>
+        <li><a href="#services">SERVICES</a></li>
+        <li><a href="#gallery">PROJECT/GALLERY</a></li>
+        <li><a href="#contact">CONTACT US</a></li>
         <li><a href="tel:02108335919">02108335919</a></li>
       </ul>
     </nav>
@@ -211,6 +209,29 @@
   <section class="hero">
     <div class="hero-text">New Build<br>And<br>Renovation Specialist</div>
   </section>
+
+  <section id="about" style="background-color: #111; padding: 3rem 1rem; text-align: center;">
+    <h2 style="color: #fff; font-size: 2rem; margin-bottom: 1rem;">About Us</h2>
+    <p style="max-width: 800px; margin: 0 auto; color: #ccc; font-size: 1.1rem;">
+      At Ardent Homes, we’re a passionate and dedicated team with a commitment to excellence in every project we take on. Since 2013, we’ve built our reputation on quality craftsmanship, attention to detail, and a relentless work ethic that puts our clients first.
+    </p>
+  </section>
+
+  
+
+  <!-- Embedded Services Section from services.html -->
+  <section id="services" class="hero" style="background: url('project2.jpg') center center no-repeat; background-size: cover; min-height: 100vh; text-align: center; display: flex; align-items: center; justify-content: center; flex-direction: column; padding-top: 6rem; box-sizing: border-box;">
+  <h1 style="color: #fff; text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;">Our Services</h1>
+  <p style="color: #fff; text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; max-width: 800px; margin: 0 auto 1rem;">
+    No job is too big or too small — we take pride in delivering quality craftsmanship from solid foundations to flawless finishing touches. Whether you're building new or breathing life into an existing space, we've got you covered every step of the way.
+  </p>
+  <ul style="list-style: none; padding: 1rem;">
+    <li style="color: #fff; text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;"><strong>New Builds</strong> — Custom homes built from the ground up</li>
+    <li style="color: #fff; text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;"><strong>Renovations</strong> — Whether it’s a complete transformation or a refresh of your kitchen and bathroom — we’ve got you covered.</li>
+    <li style="color: #fff; text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;"><strong>Reclads</strong> — Giving your home a fresh, weather-tight exterior</li>
+    <li style="color: #fff; text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;"><strong>Decks</strong> — Outdoor living spaces designed to last</li>
+  </ul>
+</section>
 
   <script>
     document.addEventListener("DOMContentLoaded", () => {
