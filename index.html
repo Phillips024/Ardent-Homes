@@ -238,11 +238,12 @@
   <p style="font-size: 1.2rem; max-width: 700px; margin: 0 auto 2rem; font-family: 'Segoe UI', sans-serif;">
     Have questions or want to get in touch? We'd love to hear from you.
   </p>
-  <form style="width: 100%; max-width: 700px; margin: 0 auto; display: flex; flex-direction: column; gap: 1rem; font-family: 'Segoe UI', sans-serif;">
+  <form action="https://formspree.io/f/xnnvanle" method="POST" style="width: 100%; max-width: 700px; margin: 0 auto; display: flex; flex-direction: column; gap: 1rem; font-family: 'Segoe UI', sans-serif;">
     <input type="text" name="name" placeholder="Your Name" required style="width: 100%; padding: 0.75rem 1rem; border-radius: 8px; border: none; font-size: 1rem; box-sizing: border-box;" />
     <input type="email" name="email" placeholder="Your Email" required style="width: 100%; padding: 0.75rem 1rem; border-radius: 8px; border: none; font-size: 1rem; box-sizing: border-box;" />
-    <textarea name="message" rows="5" placeholder="Your Message" required style="width: 100%; padding: 0.75rem 1rem; border-radius: 8px; border: none; font-size: 1rem; box-sizing: border-box;"></textarea>
+    <textarea name="message" rows="5" placeholder="Your Message" required style="width: 100%; padding: 0.75rem 1rem; border-radius: 8px; border: none; font-size: 1rem; box-sizing: border-box; resize: none;"></textarea>
     <button type="submit" style="width: 100%; padding: 0.75rem 1rem; background-color: #0080FF; color: #fff; border: none; font-size: 1rem; border-radius: 8px; cursor: pointer; box-sizing: border-box;">Send Message</button>
+    <input type="hidden" name="_next" value="https://yourdomain.com/thank-you.html" />
   </form>
   <p style="margin-top: 2rem; font-size: 1rem;">
     Or email us directly at <a href="mailto:psipou1@gmail.com" style="color: #0080FF; font-weight: bold; text-decoration: underline;">psipou1@gmail.com</a><br />
